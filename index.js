@@ -18,9 +18,9 @@ function renderQuestion() {
     console.log("hello");
     let questions = STORE.questions[questionNumber];
     const questionTemplate =
-        $(`<h2 class="headStyle title"> Score ${score} correct ${scoreWrong} incorrect Question ${questionNumber +1} of 7</h2>
+        $(`<h2 class="contentStyle title"> Score ${score} correct ${scoreWrong} incorrect Question ${questionNumber +1} of 7</h2>
     
-    <div id=questionSpot <section class="headStyle questionArea">
+    <div id=questionSpot><section class="contentStyle questionArea">
    ${questions.image}
           <h3 >${questions.questionText}</h3>
           <form method="post">
@@ -48,9 +48,9 @@ function checkAnswer() {
         }
         if (chosenAnswer === questions.answer) {
             const correctResponse =
-                $(`<h2 class="headStyle title"> Score ${score} correct ${scoreWrong} incorrect Question ${questionNumber +1} of 7</h2>
-    <img ${questions.image}/>
-    <section class="headStyle questionArea result">
+                $(`<h2 class="contentStyle title"> Score ${score} correct ${scoreWrong} incorrect Question ${questionNumber +1} of 7</h2>
+    <section class="contentStyle questionArea result">
+    ${questions.image}
     <h3 class="result">${questions.answer}</h3>
     <h4 class="result">Correct!</h4>
     <button type="submit" id="next" value="submit">Next</button>
@@ -59,9 +59,9 @@ function checkAnswer() {
             score = score + 1;
         } else {
             const inCorrectResponse =
-                $(`<h2 class="headStyle title"> Score ${score} correct ${scoreWrong} incorrect Question ${questionNumber +1} of 7</h2>
-    <img ${questions.image}/>
-    <section class="headStyle questionArea result">
+                $(`<h2 class="contentStyle title"> Score ${score} correct ${scoreWrong} incorrect Question ${questionNumber +1} of 7</h2>
+    <section class="contentStyle questionArea result">
+    ${questions.image}
     <h4 class="result"> Incorrect. <br> The correct answer is:</h4>
     <h3 class="result">${questions.answer}</h3>
     <button type="submit" id="next" value="submit">Next</button>
@@ -88,7 +88,7 @@ function nextQuestion() {
 //Shows the final results of quiz and allows the user to start again
 function finalPage() {
     const finalPageTemplate = $(`
-    <div class="headStyle" align="center">
+    <div class="contentStyle" align="center">
     <h3>Thanks for taking the quiz! <br> You answered ${score} questions correctly out of 7.</h3>
     <form> <button>Start Over</button> </form>
     </div>`);

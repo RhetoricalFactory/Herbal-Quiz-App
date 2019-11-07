@@ -5,17 +5,23 @@ body {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
-    font-size: 25px;
+    font-size: 14px;
     box-sizing: border-box;
 }
 
 p {
-    max-width: 70%;
+    max-width: 80%;
     min-width: 50%;
-    font-size: 1.35em;
+    /* font-size: 1.35em; */
 }
 
-.headStyle {
+h1 {
+    font-weight: lighter;
+}
+
+
+
+.contentStyle {
     background-color: white;
     opacity: 0.7;
     width: 100%;
@@ -30,11 +36,13 @@ div section {
 }
 
 .drawing {
-    max-width: 40%;
+    height:40%;
+    width:40%;
     margin: 2px;
     float: left;
     position: relative;
 }
+
 
 .title {
     width: 100%;
@@ -42,6 +50,16 @@ div section {
     text-align: center;
     padding: 0px;
     margin: 0px;
+}
+
+#licorice {
+    max-height:400px;
+    max-width: 300px;
+}
+
+#lemonBalm {
+    max-height:400px;
+    max-width: 300px;
 }
 
 #progress {
@@ -53,8 +71,8 @@ div section {
 
 
 .questionArea {
-    height: 75%;
-    font-weight: 900;
+    height: 400px;
+    font-weight: 600;
     font-size: 1.35em;
 }
 
@@ -65,20 +83,23 @@ div section {
     font-weight: lighter;
     height: 50%;
 }
-
+h2 {
+    font-size: 1.5em;
+}
 /* .greeting {
     margin: auto;
     font-weight: lighter;
     max-height: 40%;
 } */
 
-#questionSpot {
-    height: auto;
-}
+/* #questionSpot {
+    height:550px;
+} */
 
-.result {
+/* .result {
     margin: 10px;
-}
+
+} */
 
 label:hover {
     color: darkgreen;
@@ -100,8 +121,9 @@ button {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     padding: 10px;
-    font-size: 25px;
+    font-size: 18px;
     border: none;
+    margin-bottom: 10px;
 
 }
 
@@ -111,11 +133,11 @@ button:hover {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     padding: 10px;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 footer {
-    font-size: 25px;
+    font-size: 16px;
     color: white;
     background-color: black;
     opacity: 0.50;
